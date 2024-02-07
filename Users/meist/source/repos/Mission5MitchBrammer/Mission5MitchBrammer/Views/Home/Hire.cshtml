@@ -1,0 +1,30 @@
+﻿
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="~/lib/jquery/dist/hirecalculator.js"></script>
+<h1>Dance Lesson Services</h1>
+<br />
+
+<div>
+    <label for="hours">Number of Hours:</label>
+    <br />
+    <input type="number" id="hours" min="0" required />
+    <span id="hoursValidation" style="color: red;"></span>
+</div>
+<br />
+<br />
+<div>
+    <label>Hourly Rate:</label>
+    <br />
+    <input type="text" id="hourlyRate" value="$30" readonly />
+</div>
+<br />
+<br />
+<div>
+    <button id="calculateButton">Calculate Total</button>
+</div>
+<div>
+    <label for="total">Total Cost:</label>
+    <input type="text" id="total" readonly />
+</div>
+<br />
+<br />

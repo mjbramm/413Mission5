@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>MY DANCE HOBBY</title>
+    <link rel="icon" href="~/dancing.png" type="image/png">
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: right;
+        }
+
+        main {
+            flex: 1;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="@Url.Action("Index", "Home")" style="text-decoration: none; color: black;">
+            <button>About me</button>
+        </a>
+        <a href="@Url.Action("Hire", "Home")" style="text-decoration: none; color: black;">
+            <button>Hire me</button>
+        </a>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Hobby Website. All rights reserved. | Created by Mitch Brammer</p>
+    </footer>
+
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</body>
+</html>
